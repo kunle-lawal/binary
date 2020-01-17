@@ -1,0 +1,333 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+@import url("https://fonts.googleapis.com/css?family=Lato:900");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=reset.css.map */
+/* COLOR PALLET */
+/* MEDIA QUERY BREAK POINTS */
+a {
+  text-decoration: none;
+  color: initial;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+  color: white;
+}
+
+button {
+  font-family: "Quicksand", sans-serif;
+}
+
+.button-input {
+  transition: opacity 0.2s;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                supported by Chrome and Opera */
+}
+
+/*Main Font-sizes*/
+/*FONTS*/
+label {
+  font-family: "Quicksand", sans-serif;
+  width: initial !important;
+}
+
+.lato {
+  font-family: "Lato", sans-serif;
+}
+
+.quicksand {
+  font-family: "Quicksand", sans-serif;
+}
+
+.logo {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 200;
+}
+
+h1 {
+  font-size: 45px;
+  line-height: 50px;
+  font-family: "Lato", sans-serif;
+}
+@media only screen and (max-width: 700px) {
+  h1 {
+    font-size: 28.125px;
+  }
+}
+@media only screen and (min-width: 701px) and (max-width: 1257px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
+h2 {
+  font-size: 28px;
+  line-height: 33px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+@media only screen and (max-width: 700px) {
+  h2 {
+    font-size: 24px;
+    line-height: 19px;
+  }
+}
+
+h3 {
+  font-size: 30px;
+  line-height: 35px;
+  font-family: "Quicksand", sans-serif;
+}
+@media only screen and (max-width: 700px) {
+  h3 {
+    font-size: 17.6470588235px;
+  }
+}
+@media only screen and (min-width: 701px) and (max-width: 1257px) {
+  h3 {
+    font-size: 20px;
+  }
+}
+
+h4 {
+  font-size: 15px;
+  line-height: 20px;
+  font-family: "Quicksand", sans-serif;
+  color: #222222;
+}
+
+p {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 300;
+  font-family: "Open Sans", sans-serif;
+  color: #314455;
+}
+@media only screen and (max-width: 700px) {
+  p {
+    font-size: 14px;
+  }
+}
+
+.display_none {
+  display: none !important;
+}
+
+body {
+  background-color: #fff;
+}
+
+.main_page {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -30%);
+  width: 100%;
+}
+
+.squares {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  width: 70vw !important;
+  height: 70vw !important;
+  max-width: 400px;
+  max-height: 400px;
+  margin: auto;
+}
+@media only screen and (orientation: landscape) and (max-width: 700px) {
+  .squares {
+    width: 40vw !important;
+    height: 40vw !important;
+    max-width: 300px;
+    max-height: 300px;
+  }
+}
+@media only screen and (orientation: landscape) and (min-width: 701px) and (max-width: 1257px) {
+  .squares {
+    width: 40vw !important;
+    height: 40vw !important;
+    max-width: 300px;
+    max-height: 300px;
+  }
+}
+.squares .square {
+  border: 1px solid #222;
+}
+
+.binary {
+  position: relative;
+  width: 50%;
+  margin: auto;
+  /* -webkit-transform: translate(-50%, -50%); */
+  /* transform: translate(-50%, -50%); */
+}
+@media only screen and (max-width: 700px) {
+  .binary {
+    width: 90%;
+  }
+}
+.binary p {
+  color: #222;
+  font-weight: 900;
+  font-size: 1.4rem;
+  display: inline-block;
+}
+
+/*# sourceMappingURL=main.css.map */
